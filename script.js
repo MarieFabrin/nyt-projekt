@@ -1,6 +1,6 @@
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60 ){
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 ){
         document.getElementById("navbar").style.height = "120px";
         document.getElementById("logo").style.height = "80px";
 

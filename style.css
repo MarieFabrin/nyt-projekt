@@ -14,26 +14,26 @@
 }
 
 h1 {
-    font-size: 64px;
+    font-size: clamp(24px, 8vw, 64px);
     font-weight: 700;
     color: var(--white);
 }
 
 h2 {
-    font-size: 52px;
+    font-size: clamp(22px, 6vw, 52px);
     font-weight: 500;
     color: var(--white);
 }
 
 h3 {
-    font-size: 48px;
+    font-size: clamp(20px, 5vw, 48px);
     font-weight: 700;
     color: var(--white);
 }
 
 p,
 a {
-    font-size: 28px;
+    font-size: clamp(16px, 2vw, 28px);
     font-weight: 500;
     color: var(--white);
 }

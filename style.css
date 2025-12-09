@@ -7,6 +7,10 @@
     --lightorange: #FFA20D;
     --white: #FFF7ED;
     --grey: #344044;
+    --rlybigpadding: 8vw;
+    --bigpadding: 4vw;
+    --smallpadding: 2vw;
+    --gap: 1vw;
 }
 
 h1 {
@@ -47,8 +51,8 @@ header{
     left: 0%;
     right: 0%;
     top: 0%;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: var(--bigpadding);
+    padding-right: var(--rlybigpadding);
     background-color: var(--grey);
 }
 
@@ -57,7 +61,7 @@ header{
     justify-content: space-between;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: var(--bigpadding);
     height: 190px;
 
 }
@@ -74,7 +78,7 @@ a{
 
 .footer {
     display: flex;
-    padding: 40px 80px;
+    padding: var(--smallpadding) var(--bigpadding);
     justify-content: space-between;
     align-items: center;
 }

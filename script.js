@@ -1,0 +1,11 @@
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60 ){
+        document.getElementById("navbar").style.height = "120px";
+        document.getElementById("logo").style.height = "80px";
+
+    }else{
+        document.getElementById("navbar").style.height = "190px";
+        document.getElementById("logo").style.height = "100px";
+    }
+}

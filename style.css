@@ -74,6 +74,25 @@ a{
     text-decoration: none;
     color: white;
 }
+
+/*Hero*/
+
+.hero{
+    height: 650px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: var(--black);
+}
+
+h2{
+    color: var(--black);
+}
 /*footer*/
 
 .footer {

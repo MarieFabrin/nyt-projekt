@@ -134,6 +134,27 @@ h2 {
     width: 50%;
 }
 
+
+/*luftpumpe*/
+.luftpumpe,
+#luftpumpepage {
+    padding: var(--toppadding) var(--sidepadding);
+}
+#luftpumpepage {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.luftpumpecontent {
+    display: flex;
+    gap: var(--gap);
+}
+
+#luftpummpetext, 
+#luftpumpeimg {
+    width: 50%;
+}
+
 /*anmeldelser*/
 .anmeldesler {
     padding: var(--toppadding) var(--sidepadding);
@@ -155,7 +176,6 @@ h2 {
 
 #anmeldtext {
     width: fit-content;
-
 }
 
 #anmeldnavn {
@@ -233,7 +253,7 @@ button {
 
 .footer {
     display: flex;
-    padding: var(--rlybigpadding) var(--bigpadding);
+    padding: var(--smallpadding) var(--sidepadding);
     justify-content: space-between;
     align-items: center;
 }

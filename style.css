@@ -14,8 +14,6 @@
     --dropshadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-#CA6F00
-
 h1 {
     font-size: clamp(24px, 8vw, 64px);
     font-weight: 700;
@@ -38,7 +36,7 @@ h3 {
 p,
 a,
 input {
-    font-size: clamp(16px, 2vw, 28px);
+    font-size: clamp(16px, 2vw, 36px);
     font-weight: 500;
     color: var(--white);
 }
@@ -79,6 +77,7 @@ a{
     text-decoration: none;
     color: white;
 }
+
 /*kontakt*/
 
 .kontaktgrid {
@@ -87,6 +86,11 @@ a{
     grid-template-rows: repeat(3, 1fr);
     column-gap: var(--gap);
     row-gap: var(--gap);
+}
+.kontaktsection {
+    padding: var(--rlybigpadding);
+    background-image: url(fotos/background\ img.png);
+    object-fit: fill;
 }
 
 #navn {
@@ -104,6 +108,7 @@ a{
 #besked {
     grid-column: 2/3;
     grid-row: 1/4;
+    vertical-align: text-top;
 }
 
 input {

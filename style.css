@@ -36,7 +36,8 @@ h3 {
 p,
 a,
 input,
-button {
+button,
+textarea {
     font-size: clamp(16px, 2vw, 36px);
     font-weight: 500;
     color: var(--white);
@@ -80,7 +81,7 @@ header {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 /*end header*/
@@ -155,6 +156,10 @@ h2 {
     width: 50%;
 }
 
+#luftpumpemain {
+    text-align: center;
+}
+
 /*anmeldelser*/
 .anmeldesler {
     padding: var(--toppadding) var(--sidepadding);
@@ -193,39 +198,41 @@ h2 {
     grid-template-rows: repeat(3, 1fr);
     column-gap: var(--gap);
     row-gap: var(--gap);
+    width: 100%;
 }
 
 .kontaktsection {
+    display: flex;
     padding: var(--toppadding) var(--sidepadding);
     gap: var(--smallpadding);
     flex-direction: column;
-    background-image: url(fotos/background\ img.png);
-    object-fit: fill;
     align-items: center;
+    text-align: center;
+    background-image: url(fotos/background\ img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #navn {
     grid-column: 1/2;
     grid-row: 1/2;
 }
-
 #tlf {
     grid-column: 1/2;
     grid-row: 2/3;
 }
-
 #email {
     grid-column: 1/2;
     grid-row: 3/4;
 }
-
 #besked {
     grid-column: 2/3;
     grid-row: 1/4;
-    vertical-align: text-top;
+    line-height: 1.4;  
 }
 
-input {
+input,
+textarea {
     background-color: var(--white);
     color: var(--black);
     border-radius: 15px;
@@ -250,15 +257,33 @@ button {
 }
 
 /*footer*/
-
 .footer {
     display: flex;
     padding: var(--smallpadding) var(--sidepadding);
     justify-content: space-between;
     align-items: center;
+    text-align: center;
+}
+
+.footerimg {
+    display: flex;
+    gap: var(--gap);
 }
 
 .some img {
     width: 75px;
     height: 75px;
+}
+
+@media screen and (max-width: 715px) {
+    .footer {
+        flex-direction: column;
+        gap: var(--smallpadding);
+        padding: var(--sidepadding) 0;
+    }
+
+    .some img {
+        width: 50px;
+        height: 50px;
+    }
 }

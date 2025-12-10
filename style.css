@@ -113,7 +113,8 @@ h2{
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: var(--dropshadow);
+    width: fit-content;
 }
 /*end Hero*/
 
@@ -127,9 +128,11 @@ h2{
     row-gap: var(--gap);
 }
 .kontaktsection {
-    padding: var(--rlybigpadding);
+    gap: var(--smallpadding);
+    flex-direction: column;
     background-image: url(fotos/background\ img.png);
     object-fit: fill;
+    align-items: center;
 }
 
 #navn {

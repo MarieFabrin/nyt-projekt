@@ -7,8 +7,8 @@
     --lightorange: #FFA20D;
     --white: #FFF7ED;
     --grey: #344044;
-    --rlybigpadding: 8vw;
-    --bigpadding: 4vw;
+    --toppadding: 8vw;
+    --sidepadding: 4vw;
     --smallpadding: 2vw;
     --gap: 1vw;
     --dropshadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
@@ -35,19 +35,20 @@ h3 {
 
 p,
 a,
-input {
+input,
+button {
     font-size: clamp(16px, 2vw, 36px);
     font-weight: 500;
     color: var(--white);
 }
 
 
-body{
+body {
     background-color: var(--black);
 }
 
 /*header*/
-header{
+header {
     height: 190px;
     display: flex;
     justify-content: space-between;
@@ -56,28 +57,28 @@ header{
     left: 0%;
     right: 0%;
     top: 0%;
-    padding-left: var(--bigpadding);
-    padding-right: var(--rlybigpadding);
+    padding-left: var(--sidepadding);
+    padding-right: var(--toppadding);
     background-color: var(--grey);
     transition: 1s;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     justify-content: center;
-    gap: var(--bigpadding);
+    gap: var(--sidepadding);
     height: 190px;
 
 }
 
-#logo{
+#logo {
     height: 100px;
     transition: 1s;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
@@ -85,7 +86,7 @@ a{
 /*end header*/
 /*Hero*/
 
-.hero{
+.hero {
     height: 650px;
     background-color: white;
     display: flex;
@@ -95,15 +96,15 @@ a{
     margin-top: 100px;
 }
 
-h1{
+h1 {
     color: var(--black);
 }
 
-h2{
+h2 {
     color: var(--black);
 }
 
-#button{
+#button {
     text-decoration: none;
     background-color: var(--darkorange);
     color: var(--white);
@@ -116,10 +117,42 @@ h2{
     box-shadow: var(--dropshadow);
     width: fit-content;
 }
+
 /*end Hero*/
 
-/*kontakt*/
+/*anmeldelser*/
+.anmeldesler {
+    padding: var(--toppadding) var(--sidepadding);
+    align-items: center;
+}
 
+.anmeldcards {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap);
+}
+
+.anmeldcard {
+    background-color: var(--grey);
+    border-radius: 15px;
+    padding: var(--gap);
+    width: 30%;
+}
+
+#anmeldtext {
+    width: fit-content;
+
+}
+
+#anmeldnavn {
+    text-align: right;
+}
+
+#anmeldnavn p {
+    color: var(--lightorange);
+}
+
+/*kontakt*/
 .kontaktgrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -127,7 +160,9 @@ h2{
     column-gap: var(--gap);
     row-gap: var(--gap);
 }
+
 .kontaktsection {
+    padding: var(--toppadding) var(--sidepadding);
     gap: var(--smallpadding);
     flex-direction: column;
     background-image: url(fotos/background\ img.png);
@@ -139,14 +174,17 @@ h2{
     grid-column: 1/2;
     grid-row: 1/2;
 }
+
 #tlf {
     grid-column: 1/2;
     grid-row: 2/3;
 }
+
 #email {
     grid-column: 1/2;
     grid-row: 3/4;
 }
+
 #besked {
     grid-column: 2/3;
     grid-row: 1/4;
@@ -162,11 +200,26 @@ input {
     box-shadow: var(--dropshadow);
 }
 
+button {
+    text-decoration: none;
+    background-color: var(--darkorange);
+    color: var(--white);
+    display: flex;
+    padding: 15px 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: none;
+    box-shadow: var(--dropshadow);
+    width: fit-content;
+}
+
 /*footer*/
 
 .footer {
     display: flex;
-    padding: var(--smallpadding) var(--bigpadding);
+    padding: var(--rlybigpadding) var(--bigpadding);
     justify-content: space-between;
     align-items: center;
 }

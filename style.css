@@ -7,8 +7,8 @@
     --lightorange: #FFA20D;
     --white: #FFF7ED;
     --grey: #344044;
-    --rlybigpadding: 8vw;
-    --bigpadding: 4vw;
+    --toppadding: 8vw;
+    --sidepadding: 4vw;
     --smallpadding: 2vw;
     --gap: 1vw;
     --dropshadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
@@ -56,8 +56,8 @@ header{
     left: 0%;
     right: 0%;
     top: 0%;
-    padding-left: var(--bigpadding);
-    padding-right: var(--rlybigpadding);
+    padding-left: var(--sidepadding);
+    padding-right: var(--toppadding);
     background-color: var(--grey);
     transition: 1s;
 }
@@ -67,7 +67,7 @@ header{
     justify-content: space-between;
     align-items: center;
     justify-content: center;
-    gap: var(--bigpadding);
+    gap: var(--sidepadding);
     height: 190px;
 
 }
@@ -117,6 +117,20 @@ h2{
     width: fit-content;
 }
 /*end Hero*/
+/*om mig*/
+#ommig{
+    padding: var(--toppadding);
+}
+#underommig{
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+}
+#pictureOmmig{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
 
 /*kontakt*/
 

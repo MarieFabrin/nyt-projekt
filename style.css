@@ -34,7 +34,7 @@ h3 {
 }
 
 h4{
-    font-size: 36px;
+    font-size: clamp(18px, 2vw, 36px);
     color: var(--white);
     text-align: center;
 }
@@ -199,6 +199,7 @@ span{
 .luftpumpecontent {
     display: flex;
     gap: var(--gap);
+    align-items: center;
 }
 
 #luftpummpetext, 
@@ -326,6 +327,21 @@ button {
 }
 
 @media screen and (max-width: 715px) {
+    #underommig,
+    .luftpumpecontent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pictureOmmig {
+        width: 100%;
+    }
+    
+    #luftpummpetext, 
+    #luftpumpeimg {
+        width: 100%;
+    }
+
     .footer {
         flex-direction: column;
         gap: var(--smallpadding);
@@ -335,5 +351,39 @@ button {
     .some img {
         width: 50px;
         height: 50px;
+    }
+
+    .kontaktgrid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        column-gap: var(--gap);
+        row-gap: var(--gap);
+        width: 100%;
+    }
+
+    #navn {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #tlf {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #email {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #besked {
+        grid-column: 1/2;
+        grid-row: 4/7;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #Ydelser {
+        flex-direction: column;
+    }
+    .work {
+        width: 100%;
     }
 }

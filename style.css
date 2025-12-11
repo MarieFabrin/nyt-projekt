@@ -96,6 +96,31 @@ a:hover{
     text-decoration-color: var(--lightorange);
 }
 
+.dropdownMenu {
+  position: relative;
+  display: inline-block;
+  display: none;
+}
+
+
+.dropdownContent{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownMenu :hover{
+    display: block;
+    background-color: var(--lightorange);
+}
+
+.dropdownMenu :hover .dropdownContent {
+    display: block;
+}
+
 /*end header*/
 /*Hero*/
 
@@ -327,6 +352,13 @@ button {
 }
 
 @media screen and (max-width: 715px) {
+    .navbar{
+        display: none;
+    }
+    
+    .dropdownMenu{
+        display: block;
+    }
     #underommig,
     .luftpumpecontent {
         flex-direction: column;

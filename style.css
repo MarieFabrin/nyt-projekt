@@ -33,6 +33,12 @@ h3 {
     text-align: center;
 }
 
+h4{
+    font-size: 36px;
+    color: var(--white);
+    text-align: center;
+}
+
 p,
 a,
 input,
@@ -81,7 +87,13 @@ header {
 
 a {
     text-decoration: none;
-    color: var(--white);
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: var(--lightorange);
 }
 
 /*end header*/
@@ -134,7 +146,45 @@ h2 {
     flex-direction: column;
     width: 50%;
 }
-
+/*end om mig*/
+/*ydelser*/
+#minYdelser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Ydelser{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: var(--toppadding) var(--sidepadding);
+    align-self: stretch;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: var(--dropshadow);
+}
+.workPictures{
+    height: 312px;
+    border-radius: 15px;
+}
+.textWork{
+    display: flex;
+    padding: 20px;
+    padding-top: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+span{
+    color: var(--lightorange);
+}
 
 /*luftpumpe*/
 .luftpumpe,

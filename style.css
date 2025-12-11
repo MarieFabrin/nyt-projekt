@@ -93,7 +93,15 @@ a {
 a:hover{
     text-decoration: underline;
     text-decoration-style: double;
+    text-decoration-color: var(--lightblue);
+    text-decoration-thickness: 3px;
+}
+
+
+a:hover:first-line{
+    text-decoration: underline;
     text-decoration-color: var(--lightorange);
+    text-decoration-thickness: 3px;
 }
 
 .dropdownMenu {
@@ -114,7 +122,6 @@ a:hover{
 
 .dropdownMenu :hover{
     display: block;
-    background-color: var(--lightorange);
 }
 
 .dropdownMenu :hover .dropdownContent {
@@ -352,6 +359,7 @@ button {
 }
 
 @media screen and (max-width: 715px) {
+
     .navbar{
         display: none;
     }

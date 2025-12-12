@@ -52,6 +52,7 @@ textarea {
 
 body {
     background-color: var(--black);
+    font-family: "Exo", sans-serif;
 }
 
 /*header*/
@@ -190,6 +191,7 @@ span{
     display: flex;
     flex-direction: row;
     gap: var(--gap);
+    box-shadow: var(--dropshadow);
 }
 
 /*luftpumpe*/
@@ -213,6 +215,10 @@ span{
     width: 50%;
 }
 
+#luftpumpeimg image {
+    box-shadow: var(--dropshadow);
+}
+
 #luftpumpemain {
     text-align: center;
 }
@@ -234,6 +240,7 @@ span{
     border-radius: 15px;
     padding: var(--gap);
     width: 30%;
+    box-shadow: var(--dropshadow);
 }
 
 #anmeldtext {

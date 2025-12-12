@@ -186,6 +186,12 @@ span{
     color: var(--lightorange);
 }
 
+.servicecards {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap);
+}
+
 /*luftpumpe*/
 .luftpumpe,
 #luftpumpepage {

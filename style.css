@@ -95,8 +95,8 @@ a:hover{
     text-decoration-style: double;
     text-decoration-color: var(--lightblue);
     text-decoration-thickness: 3px;
+    text-underline-offset: 15px;
 }
-
 
 a:hover:first-line{
     text-decoration: underline;
@@ -106,7 +106,6 @@ a:hover:first-line{
 
 .dropdownMenu {
   position: relative;
-  display: inline-block;
   display: none;
 }
 

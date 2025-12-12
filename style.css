@@ -94,7 +94,43 @@ a {
 a:hover{
     text-decoration: underline;
     text-decoration-style: double;
+    text-decoration-color: var(--lightblue);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 15px;
+}
+
+a:hover:first-line{
+    text-decoration: underline;
     text-decoration-color: var(--lightorange);
+    text-decoration-thickness: 3px;
+}
+
+.dropdownMenu {
+  position: relative;
+  display: none;
+}
+
+
+.dropdownContent{
+  display: none;
+  position: absolute;
+  background-color: var(--darkblue);
+  border-radius: 25px;
+  box-shadow: var(--dropshadow);
+  z-index: 1;
+  width: fit-content;
+}
+
+.dropdownContent a{
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.dropdownMenu:hover .dropdownContent {
+    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 /*end header*/
@@ -340,6 +376,14 @@ button {
 }
 
 @media screen and (max-width: 715px) {
+
+    .navbar{
+        display: none;
+    }
+    
+    .dropdownMenu{
+        display: block;
+    }
     #underommig,
     .luftpumpecontent {
         flex-direction: column;

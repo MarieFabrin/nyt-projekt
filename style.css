@@ -43,7 +43,8 @@ p,
 a,
 input,
 button,
-textarea {
+textarea,
+li {
     font-size: clamp(16px, 2vw, 36px);
     font-weight: 500;
     color: var(--white);

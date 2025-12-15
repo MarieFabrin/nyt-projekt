@@ -177,6 +177,11 @@ h2 {
     border-radius: 25px;
     box-shadow: var(--dropshadow);
     width: fit-content;
+    transition: 1s;
+}
+
+#button:hover {
+    background-color: var(--lightorange);
 }
 
 /*end Hero*/
@@ -259,6 +264,12 @@ span{
 
 
 /*luftpumpe*/
+.luftpumpe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap);
+}
 .luftpumpe,
 #luftpumpepage {
     padding: var(--toppadding) var(--sidepadding);

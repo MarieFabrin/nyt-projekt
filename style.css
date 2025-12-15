@@ -33,7 +33,7 @@ h3 {
     text-align: center;
 }
 
-h4{
+h4 {
     font-size: clamp(18px, 2vw, 36px);
     color: var(--white);
     text-align: center;
@@ -52,7 +52,9 @@ li {
 
 
 body {
-    background-color: var(--black);
+    background-image: url(fotos/bcgimg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: "Exo", sans-serif;
 }
 
@@ -63,7 +65,7 @@ body {
     text-underline-offset: 15px;
 }
 
-#smalllink:hover:first-line{
+#smalllink:hover:first-line {
     text-decoration-color: var(--darkorange);
 }
 
@@ -102,7 +104,7 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
     text-decoration-style: double;
     text-decoration-color: var(--lightblue);
@@ -110,29 +112,29 @@ a:hover{
     text-underline-offset: 15px;
 }
 
-a:hover:first-line{
+a:hover:first-line {
     text-decoration: underline;
     text-decoration-color: var(--lightorange);
     text-decoration-thickness: 3px;
 }
 
 .dropdownMenu {
-  position: relative;
-  display: none;
+    position: relative;
+    display: none;
 }
 
 
-.dropdownContent{
-  display: none;
-  position: absolute;
-  background-color: var(--darkblue);
-  border-radius: 25px;
-  box-shadow: var(--dropshadow);
-  z-index: 1;
-  width: fit-content;
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: var(--darkblue);
+    border-radius: 25px;
+    box-shadow: var(--dropshadow);
+    z-index: 1;
+    width: fit-content;
 }
 
-.dropdownContent a{
+.dropdownContent a {
     padding: 10px;
     text-decoration: none;
 }
@@ -186,35 +188,40 @@ h2 {
 
 /*end Hero*/
 /*om mig*/
-#ommig{
+#ommig {
     padding: var(--toppadding);
 }
-#underommig{
+
+#underommig {
     display: flex;
     flex-direction: row;
     gap: 52px;
 }
-#pictureOmmig{
+
+#pictureOmmig {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
+
 /*end om mig*/
 
 /*ydelser*/
-#minYdelser{
+#minYdelser {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#Ydelser{
+
+#Ydelser {
     display: flex;
     flex-direction: row;
     gap: 40px;
     padding: var(--toppadding) var(--sidepadding);
     align-self: stretch;
 }
-.work{
+
+.work {
     display: flex;
     flex-direction: column;
     background-color: var(--grey);
@@ -222,11 +229,13 @@ h2 {
     border-radius: 15px;
     box-shadow: var(--dropshadow);
 }
-.workPictures{
+
+.workPictures {
     height: 312px;
     border-radius: 15px;
 }
-.textWork{
+
+.textWork {
     display: flex;
     padding: 20px;
     padding-top: 0px;
@@ -236,7 +245,8 @@ h2 {
     gap: 20px;
     align-self: stretch;
 }
-span{
+
+span {
     color: var(--lightorange);
 }
 
@@ -264,16 +274,18 @@ span{
 
 
 /*luftpumpe*/
-.luftpumpe{
+.luftpumpe {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--gap);
 }
+
 .luftpumpe,
 #luftpumpepage {
     padding: var(--toppadding) var(--sidepadding);
 }
+
 #luftpumpepage {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -285,7 +297,7 @@ span{
     align-items: center;
 }
 
-#luftpummpetext, 
+#luftpummpetext,
 #luftpumpeimg {
     width: 50%;
 }
@@ -356,18 +368,21 @@ span{
     grid-column: 1/2;
     grid-row: 1/2;
 }
+
 #tlf {
     grid-column: 1/2;
     grid-row: 2/3;
 }
+
 #email {
     grid-column: 1/2;
     grid-row: 3/4;
 }
+
 #besked {
     grid-column: 2/3;
     grid-row: 1/4;
-    line-height: 1.4;  
+    line-height: 1.4;
 }
 
 input,
@@ -395,6 +410,59 @@ button {
     width: fit-content;
 }
 
+/*kalender*/
+
+.calendarpadding {
+    padding: var(--toppadding) var(--sidepadding);
+}
+
+.calendar {
+    display: flex;
+    padding: 80px 60px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+    flex: 1 0 0;
+    background-color: #232D31;
+    border-radius: 15px;
+}
+
+#month img {
+    width: 38.557px;
+    height: 53.235px;
+}
+
+#month {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: left;
+    gap: var(--sidepadding);
+    align-items: center;
+}
+
+.weekday {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.calendargrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.calendargrid div {
+    background-color: var(--grey);
+    border-radius: 15px;
+    padding: 8px 32px 122px 31px;
+
+}
+
 /*footer*/
 .footer {
     display: flex;
@@ -402,6 +470,7 @@ button {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    background-color: var(--black);
 }
 
 .footerimg {
@@ -416,13 +485,14 @@ button {
 
 @media screen and (max-width: 715px) {
 
-    .navbar{
+    .navbar {
         display: none;
     }
-    
-    .dropdownMenu{
+
+    .dropdownMenu {
         display: block;
     }
+
     #underommig,
     .luftpumpecontent {
         flex-direction: column;
@@ -440,8 +510,8 @@ button {
     #pictureOmmig {
         width: 100%;
     }
-    
-    #luftpummpetext, 
+
+    #luftpummpetext,
     #luftpumpeimg {
         width: 100%;
     }
@@ -469,14 +539,17 @@ button {
         grid-column: 1/2;
         grid-row: 1/2;
     }
+
     #tlf {
         grid-column: 1/2;
         grid-row: 2/3;
     }
+
     #email {
         grid-column: 1/2;
         grid-row: 3/4;
     }
+
     #besked {
         grid-column: 1/2;
         grid-row: 4/7;
@@ -487,6 +560,7 @@ button {
     #Ydelser {
         flex-direction: column;
     }
+
     .work {
         width: 100%;
     }

@@ -483,6 +483,41 @@ button {
     height: 75px;
 }
 
+/*pris*/
+#minePriser{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#prispakker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pakker{
+    border: 1px solid #FFF7ED;
+    width: 75%;
+    text-align: center;
+}
+
+#round{
+    border: 1px solid #FFF7ED;
+    border-radius: 15px 15px 0 0;
+    width: 75%;
+    text-align: center;
+}
+
+#corners{
+    border: 1px solid #FFF7ED;
+    border-radius: 0 0 15px 15px;
+    width: 75%;
+    text-align: center;
+}
+
 @media screen and (max-width: 715px) {
 
     .navbar {

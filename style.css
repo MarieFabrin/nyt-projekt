@@ -281,6 +281,12 @@ span {
     gap: var(--gap);
 }
 
+#luftpumpepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .luftpumpe,
 #luftpumpepage {
     padding: var(--toppadding) var(--sidepadding);

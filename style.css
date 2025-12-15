@@ -56,6 +56,17 @@ body {
     font-family: "Exo", sans-serif;
 }
 
+#smalllink:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--darkorange);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 15px;
+}
+
+#smalllink:hover:first-line{
+    text-decoration-color: var(--darkorange);
+}
+
 /*header*/
 header {
     height: 190px;
@@ -184,6 +195,7 @@ h2 {
     width: 50%;
 }
 /*end om mig*/
+
 /*ydelser*/
 #minYdelser{
     display: flex;
@@ -227,8 +239,24 @@ span{
     display: flex;
     flex-direction: row;
     gap: var(--gap);
-    box-shadow: var(--dropshadow);
+    align-items: center;
 }
+
+#myservices {
+    padding: var(--toppadding) var(--sidepadding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    margin-top: 50px;
+    align-items: center;
+}
+
+#workimage {
+    box-shadow: var(--dropshadow);
+    width: 50%;
+    height: auto;
+}
+
 
 /*luftpumpe*/
 .luftpumpe,
@@ -388,6 +416,14 @@ button {
     .luftpumpecontent {
         flex-direction: column;
         align-items: center;
+    }
+
+    .servicecards {
+        flex-direction: column;
+    }
+
+    #workimage {
+        width: 100%;
     }
 
     #pictureOmmig {

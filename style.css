@@ -59,6 +59,27 @@ body {
     font-family: "Exo", sans-serif;
 }
 
+#luftBody{
+    background-image: url(fotos/luft-til\ luft\ \(3\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Exo", sans-serif;
+}
+
+#serviceBody{
+    background-image: url(fotos/Services\ \(3\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Exo", sans-serif;
+}
+
+#prisBody{
+    background-image: url(fotos/Priser\ \(3\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Exo", sans-serif;
+}
+
 #smalllink:hover {
     text-decoration: underline;
     text-decoration-color: var(--darkorange);

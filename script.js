@@ -9,3 +9,20 @@ function scrollFunction() {
         document.getElementById("logo").style.height = "100px";
     }
 }
+
+/* validate kontakt felt */
+function sendsvar() {
+    const navn = document.getElementById('navn').value;
+    const tlf = document.getElementById('tlf').value;
+    const email = document.getElementById('email').value;
+    const besked = document.getElementById('besked').value;
+    if (navn == '') {
+        alert('Navn skal udfyldes');
+    }
+    if (tlf == '' && email == '') {
+        alert('Telefon nr og/eller email skal udfyldes');
+    }
+    if (besked == '') {
+        alert('Besked skal udfyldes');
+    }
+}

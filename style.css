@@ -18,12 +18,15 @@ h1 {
     font-size: clamp(24px, 8vw, 64px);
     font-weight: 700;
     color: var(--black);
+    text-align: center;
+    padding: 0 var(--sidepadding);
 }
 
 h2 {
     font-size: clamp(22px, 6vw, 52px);
     font-weight: 500;
     color: var(--black);
+    text-align: center;
 }
 
 h3 {
@@ -38,6 +41,7 @@ h4 {
     font-size: clamp(18px, 2vw, 36px);
     color: var(--white);
     text-align: center;
+    margin-bottom: 0;
 }
 
 p,
@@ -171,7 +175,7 @@ a:hover:first-line {
 /*end header*/
 /*Hero*/
 .hero {
-    height: 650px;
+    height: 80vh;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -185,7 +189,7 @@ a:hover:first-line {
     background-color: var(--darkorange);
     color: var(--white);
     display: flex;
-    padding: 15px 100px;
+    padding: 15px 7vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -195,13 +199,15 @@ a:hover:first-line {
     transition: 1s;
 }
 
-#button:hover {
+#button:hover,
+button:hover {
     background-color: var(--lightorange);
 }
 
 /*end Hero*/
 /*om mig*/
-#ommig {
+#ommig,
+#ommigpage {
     padding: var(--toppadding) var(--sidepadding);
     display: flex;
     flex-direction: column;
@@ -211,7 +217,7 @@ a:hover:first-line {
 #underommig {
     display: flex;
     flex-direction: row;
-    gap: 52px;
+    gap: var(--smallpadding);
 }
 
 #pictureOmmig {
@@ -219,6 +225,11 @@ a:hover:first-line {
     flex-direction: column;
     width: 50%;
     height: 50%;
+    gap: var(--smallpadding);
+}
+
+#pictureOmmig img {
+    border-radius: 15px;
 }
 
 /*end om mig*/
@@ -236,7 +247,7 @@ a:hover:first-line {
 #Ydelser {
     display: flex;
     flex-direction: row;
-    gap: var(--smallpadding);
+    justify-content: space-between;
     align-self: stretch;
 }
 
@@ -261,7 +272,7 @@ a:hover:first-line {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: var(--gap);
     align-self: stretch;
 }
 
@@ -307,7 +318,8 @@ span {
 }
 
 .luftpumpe,
-#luftpumpepage {
+#luftpumpepage,
+.anmeldesler {
     padding: var(--toppadding) var(--sidepadding) 0 var(--sidepadding);
 }
 
@@ -332,7 +344,6 @@ span {
 
 /*anmeldelser*/
 .anmeldesler {
-    padding: var(--toppadding) var(--sidepadding);
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -420,14 +431,15 @@ button {
     background-color: var(--darkorange);
     color: var(--white);
     display: flex;
-    padding: 15px 100px;
+    padding: 15px 7vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    border: none;
     box-shadow: var(--dropshadow);
     width: fit-content;
+    transition: 1s;
+    border: none;
 }
 
 /*kalender*/
@@ -548,14 +560,19 @@ button {
     gap: var(--smallpadding);
     padding: var(--smallpadding) 0;
     align-items: center;
+    justify-content: center;
+
 }
 
 /*pris*/
-#minePriser {
+#minePriser2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: var(--smallpadding);
+    padding: var(--sidepadding) 0 var(--smallpadding) 0;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #prispakker {

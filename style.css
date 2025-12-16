@@ -382,9 +382,6 @@ span {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-image: url(fotos/background\ img.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #navn {
@@ -434,6 +431,16 @@ button {
 }
 
 /*kalender*/
+.kontaktsectionpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--smallpadding);
+    background-image: url(fotos/background\ img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .calendarpadding {
     padding: var(--toppadding) var(--sidepadding);
@@ -441,11 +448,11 @@ button {
 
 .calendar {
     display: flex;
-    padding: 80px 60px;
+    padding: var(--smallpadding) var(--smallpadding);
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 60px;
+    gap: var(--smallpadding);
     flex: 1 0 0;
     background-color: #232D31;
     border-radius: 15px;
@@ -459,10 +466,10 @@ button {
 #month {
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: left;
     gap: var(--sidepadding);
     align-items: center;
+    width: 90%;
 }
 
 .weekday {
@@ -470,6 +477,10 @@ button {
     flex-direction: row;
     justify-content: space-between;
     align-self: stretch;
+    padding: 0 var(--sidepadding);
+}
+.weekday p {
+    width: 17%;
 }
 
 .calendargrid {
@@ -477,13 +488,14 @@ button {
     flex-direction: row;
     justify-content: space-between;
     align-self: stretch;
+    padding: 0 var(--sidepadding);
 }
 
 .calendargrid div {
     background-color: var(--grey);
     border-radius: 15px;
-    padding: 8px 32px 122px 31px;
-
+    width: 17%;
+    height: 10vw;
 }
 
 /*footer*/
@@ -653,5 +665,10 @@ button {
 
     .work {
         width: 100%;
+    }
+
+    #month img {
+        width: 19.871px;
+        height: 30.076px;
     }
 }

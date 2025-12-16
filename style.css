@@ -63,21 +63,21 @@ body {
     font-family: "Exo", sans-serif;
 }
 
-#luftBody{
+#luftBody {
     background-image: url(fotos/luft-til\ luft\ \(3\).png);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Exo", sans-serif;
 }
 
-#serviceBody{
+#serviceBody {
     background-image: url(fotos/Services\ \(3\).png);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Exo", sans-serif;
 }
 
-#prisBody{
+#prisBody {
     background-image: url(fotos/Priser\ \(3\).png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -181,7 +181,8 @@ a:hover:first-line {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 140px;
+    padding: --smallpadding (--sidepadding);
 }
 
 #button {
@@ -283,16 +284,7 @@ span {
 .servicecards {
     display: flex;
     flex-direction: row;
-    gap: var(--gap);
-    align-items: center;
-}
-
-#myservices {
-    padding: var(--toppadding) var(--sidepadding);
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
-    margin-top: 50px;
+    gap: var(--smallpadding);
     align-items: center;
 }
 
@@ -301,7 +293,6 @@ span {
     width: 50%;
     height: auto;
 }
-
 
 /*luftpumpe*/
 .luftpumpe {
@@ -353,7 +344,7 @@ span {
 .anmeldcards {
     display: flex;
     flex-direction: row;
-    gap: var(--gap);
+    gap: var(--smallpadding);
 }
 
 .anmeldcard {
@@ -381,8 +372,8 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    column-gap: var(--gap);
-    row-gap: var(--gap);
+    column-gap: var(--smallpadding);
+    row-gap: var(--smallpadding);
     width: 100%;
 }
 
@@ -484,6 +475,10 @@ button {
     width: 90%;
 }
 
+#month h4 {
+    margin: 0;
+}
+
 .weekday {
     display: flex;
     flex-direction: row;
@@ -491,6 +486,7 @@ button {
     align-self: stretch;
     padding: 0 var(--sidepadding);
 }
+
 .weekday p {
     width: 17%;
 }
@@ -536,7 +532,7 @@ button {
 #ommigpage,
 .minepriserpage,
 .kontaktsectionpage {
-    margin-top: 15vh;
+    margin-top: 190px;
     padding: var(--toppadding) var(--sidepadding);
 }
 
@@ -553,7 +549,7 @@ button {
     gap: var(--smallpadding);
 }
 
-.fokusområde, 
+.fokusområde,
 #minePriser {
     display: flex;
     flex-direction: column;
@@ -602,7 +598,7 @@ button {
     text-align: center;
 }
 
-@media screen and (max-width: 715px) {
+@media screen and (max-width: 770px) {
 
     .navbar {
         display: none;
@@ -649,8 +645,8 @@ button {
     .kontaktgrid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
-        column-gap: var(--gap);
-        row-gap: var(--gap);
+        column-gap: var(--smallpadding);
+        row-gap: var(--smallpadding);
         width: 100%;
     }
 

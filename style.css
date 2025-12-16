@@ -17,13 +17,13 @@
 h1 {
     font-size: clamp(24px, 8vw, 64px);
     font-weight: 700;
-    color: var(--white);
+    color: var(--black);
 }
 
 h2 {
     font-size: clamp(22px, 6vw, 52px);
     font-weight: 500;
-    color: var(--white);
+    color: var(--black);
 }
 
 h3 {
@@ -31,6 +31,7 @@ h3 {
     font-weight: 700;
     color: var(--white);
     text-align: center;
+    margin: 0;
 }
 
 h4 {
@@ -148,7 +149,6 @@ a:hover:first-line {
 
 /*end header*/
 /*Hero*/
-
 .hero {
     height: 650px;
     background-color: white;
@@ -157,14 +157,6 @@ a:hover:first-line {
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
-}
-
-h1 {
-    color: var(--black);
-}
-
-h2 {
-    color: var(--black);
 }
 
 #button {
@@ -189,7 +181,10 @@ h2 {
 /*end Hero*/
 /*om mig*/
 #ommig {
-    padding: var(--toppadding);
+    padding: var(--toppadding) var(--sidepadding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--smallpadding);
 }
 
 #underommig {
@@ -202,6 +197,7 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 50%;
 }
 
 /*end om mig*/
@@ -211,13 +207,15 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 var(--sidepadding);
+    gap: var(--sidepadding);
+
 }
 
 #Ydelser {
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    padding: var(--toppadding) var(--sidepadding);
+    gap: var(--smallpadding);
     align-self: stretch;
 }
 
@@ -278,7 +276,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--gap);
+    gap: var(--smallpadding);
 }
 
 #luftpumpepage {
@@ -289,17 +287,12 @@ span {
 
 .luftpumpe,
 #luftpumpepage {
-    padding: var(--toppadding) var(--sidepadding);
-}
-
-#luftpumpepage {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding: var(--toppadding) var(--sidepadding) 0 var(--sidepadding);
 }
 
 .luftpumpecontent {
     display: flex;
-    gap: var(--gap);
+    gap: var(--smallpadding);
     align-items: center;
 }
 
@@ -320,6 +313,9 @@ span {
 .anmeldesler {
     padding: var(--toppadding) var(--sidepadding);
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--smallpadding);
 }
 
 .anmeldcards {
@@ -489,35 +485,67 @@ button {
     height: 75px;
 }
 
-/*pris*/
-#minePriser{
-    margin-top: 150px;
+/*andre sider */
+#myservicespage,
+#luftpumpepage,
+#ommigpage,
+.minepriserpage,
+.kontaktsectionpage {
+    margin-top: 15vh;
+    padding: var(--toppadding) var(--sidepadding);
+}
+
+.servicegap {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: var(--smallpadding);
+    padding: var(--smallpadding) 0;
+}
+
+#myservicespage {
+    display: flex;
+    flex-direction: column;
+    gap: var(--smallpadding);
+}
+
+.fokusområde, 
+#minePriser {
+    display: flex;
+    flex-direction: column;
+    gap: var(--smallpadding);
+    padding: var(--smallpadding) 0;
     align-items: center;
 }
-#prispakker{
+
+/*pris*/
+#minePriser {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.pakker{
+#prispakker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pakker {
     border: 1px solid #FFF7ED;
     width: 75%;
     text-align: center;
 }
 
-#round{
+#round {
     border: 1px solid #FFF7ED;
     border-radius: 15px 15px 0 0;
     width: 75%;
     text-align: center;
 }
 
-#corners{
+#corners {
     border: 1px solid #FFF7ED;
     border-radius: 0 0 15px 15px;
     width: 75%;

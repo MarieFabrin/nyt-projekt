@@ -405,6 +405,7 @@ span {
     border-radius: 15px;
     padding: var(--gap);
     box-shadow: var(--dropshadow);
+   
 }
 
 #arrow {
@@ -421,6 +422,10 @@ span {
 
 #anmeldnavn p {
     color: var(--lightorange);
+}
+
+#stars{
+    white-space: nowrap;
 }
 
 /*kontakt*/

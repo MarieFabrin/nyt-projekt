@@ -17,9 +17,10 @@
 h1 {
     font-size: clamp(24px, 8vw, 64px);
     font-weight: 700;
-    color: var(--black);
+    color: var(--white);
     text-align: center;
     padding: 0 var(--sidepadding);
+    
 }
 
 h2 {
@@ -105,6 +106,7 @@ body {
     background-color: var(--lightorange);
     border-radius: 15px;
     border: 5px solid #CA6F00;
+    display: none;
 }
 
 .popUp h3,
@@ -139,6 +141,7 @@ h4 {
     align-items: center;
     padding: var(--smallpadding);
 }
+
 
 /*header*/
 header {
@@ -222,16 +225,18 @@ a:focus:first-line {
 
 /*end header*/
 /*Hero*/
-.hero {
+.hero{
+    background-image: url(fotos/IMG_2234\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 80vh;
-    background-color: white;
+    margin-top: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 140px;
-    padding: --smallpadding (--sidepadding);
 }
+
 
 #button {
     text-decoration: none;

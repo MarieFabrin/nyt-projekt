@@ -28,10 +28,12 @@ function sendsvar() {
 }
 
 // Get the modal
-var modal = document.getElementsByClassName("popUp");
+var modal = document.querySelector(".popUp");
 
 // Get the <span> element that closes the modal
-var btn = document.getElementsByClassName("popUpX")[0];
+var btn = document.querySelector(".popUpX");
+
+console.log(modal)
 
 // When the user clicks on <span> (x), close the modal
 btn.onclick = function() {

@@ -96,7 +96,7 @@ body {
 }
 
 /*pop up*/
-.popUp{
+.popUp {
     position: fixed;
     top: 10%;
     right: 10%;
@@ -107,28 +107,32 @@ body {
     border: 5px solid #CA6F00;
 }
 
-.popUp h3, h4{
+.popUp h3,
+h4 {
     color: var(--white);
 }
 
-.popUpHeader{
+.popUpHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: var(--smallpadding);
 }
 
-#popUpX{
+.popUpX {
     width: 50px;
     height: 50px;
+    background-color: transparent;
+    box-shadow: none;
+
 }
 
-#popUpLogo{
+#popUpLogo {
     width: 102px;
     height: 57px;
 }
 
-.popUpText{
+.popUpText {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,7 +175,8 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
     text-decoration: underline;
     text-decoration-style: double;
     text-decoration-color: var(--lightblue);
@@ -179,11 +184,13 @@ a:hover {
     text-underline-offset: 15px;
 }
 
-a:hover:first-line {
+a:hover:first-line,
+a:focus:first-line {
     text-decoration: underline;
     text-decoration-color: var(--lightorange);
     text-decoration-thickness: 3px;
 }
+
 
 .dropdownMenu {
     position: relative;
@@ -277,7 +284,7 @@ button:hover {
 /*end om mig*/
 
 /*ydelser*/
-#minYdelser {
+.minYdelser {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -290,7 +297,8 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-self: stretch;
+    align-self: center;
+    gap: var(--smallpadding);
 }
 
 .work {
@@ -315,7 +323,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: var(--gap);
-    align-self: stretch;
 }
 
 span {
@@ -388,12 +395,16 @@ span {
     gap: var(--smallpadding);
 }
 
-.anmeldcard {
+.anmeldcard,
+.anmeldcardno {
     background-color: var(--grey);
     border-radius: 15px;
     padding: var(--gap);
-    width: 30%;
     box-shadow: var(--dropshadow);
+}
+
+#arrow {
+    display: none;
 }
 
 #anmeldtext {
@@ -488,6 +499,7 @@ button {
 
 .calendarpadding {
     padding: var(--toppadding) var(--sidepadding);
+    background-image: linear-gradient(to bottom, #132024, #1C262A);
 }
 
 .calendar {
@@ -710,6 +722,39 @@ button {
         grid-column: 1/2;
         grid-row: 4/7;
     }
+
+    #arrow {
+        display: block;
+        width: 25.977px;
+        height: 35.016px;
+    }
+
+    .anmdelarrow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .anmeldcardno {
+        display: none;
+    }
+
+    .anmeldcard {
+        align-items: center;
+        width: 75%;
+    }
+
+    .weekday p,
+    .calendargrid p {
+        font-size: 8px;
+    }
+
+    .calendargrid div,
+    .dropdownContent {
+        border-radius: 5px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -724,5 +769,15 @@ button {
     #month img {
         width: 19.871px;
         height: 30.076px;
+    }
+
+    .minYdelser {
+        display: flex;
+        align-items: center;
+        gap: var(--smallpadding);
+    }
+
+    .work {
+        max-width: 400px;
     }
 }

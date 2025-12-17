@@ -95,6 +95,47 @@ body {
     text-decoration-color: var(--darkorange);
 }
 
+/*pop up*/
+.popUp{
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    left: 10%;
+    bottom: 20%;
+    background-color: var(--lightorange);
+    border-radius: 15px;
+    border: 5px solid #CA6F00;
+}
+
+.popUp h3, h4{
+    color: var(--white);
+}
+
+.popUpHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--smallpadding);
+}
+
+#popUpX{
+    width: 50px;
+    height: 50px;
+}
+
+#popUpLogo{
+    width: 102px;
+    height: 57px;
+}
+
+.popUpText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--smallpadding);
+}
+
 /*header*/
 header {
     height: 190px;

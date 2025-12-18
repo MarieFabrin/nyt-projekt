@@ -17,17 +17,10 @@
 h1 {
     font-size: clamp(24px, 8vw, 64px);
     font-weight: 700;
-    color: var(--white);
+    color: var(--black);
     text-align: center;
     padding: 0 var(--sidepadding);
     
-}
-
-h2 {
-    font-size: clamp(22px, 6vw, 52px);
-    font-weight: 500;
-    color: var(--black);
-    text-align: center;
 }
 
 h3 {
@@ -177,8 +170,7 @@ a {
     text-decoration: none;
 }
 
-a:hover,
-a:focus {
+a:hover {
     text-decoration: underline;
     text-decoration-style: double;
     text-decoration-color: var(--lightblue);
@@ -186,8 +178,7 @@ a:focus {
     text-underline-offset: 15px;
 }
 
-a:hover:first-line,
-a:focus:first-line {
+a:hover:first-line {
     text-decoration: underline;
     text-decoration-color: var(--lightorange);
     text-decoration-thickness: 3px;
@@ -225,7 +216,7 @@ a:focus:first-line {
 /*end header*/
 /*Hero*/
 .hero{
-    background-image: url(fotos/IMG_2234\ 2.png);
+    background-image: url(fotos/hero.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
@@ -269,7 +260,6 @@ button:hover {
 
 #underommig {
     display: flex;
-    flex-direction: row;
     gap: var(--smallpadding);
 }
 
@@ -293,29 +283,28 @@ button:hover {
     flex-direction: column;
     align-items: center;
     padding: 0 var(--sidepadding);
-    gap: var(--sidepadding);
-
+    gap: var(--smallpadding);
 }
 
 #Ydelser {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-self: center;
     gap: var(--smallpadding);
+    width: 100%;
 }
 
 .work {
     display: flex;
     flex-direction: column;
     background-color: var(--grey);
-    width: 30%;
     border-radius: 15px;
     box-shadow: var(--dropshadow);
+    width: 30%;
 }
 
 .workPictures {
-    height: 312px;
+    height: auto;
     border-radius: 15px;
 }
 
@@ -335,7 +324,6 @@ span {
 
 .servicecards {
     display: flex;
-    flex-direction: row;
     gap: var(--smallpadding);
     align-items: center;
 }
@@ -395,7 +383,6 @@ span {
 
 .anmeldcards {
     display: flex;
-    flex-direction: row;
     gap: var(--smallpadding);
 }
 
@@ -530,7 +517,6 @@ button {
 
 #month {
     display: flex;
-    flex-direction: row;
     justify-content: left;
     gap: var(--sidepadding);
     align-items: center;
@@ -543,7 +529,6 @@ button {
 
 .weekday {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-self: stretch;
     padding: 0 var(--sidepadding);
@@ -555,7 +540,6 @@ button {
 
 .calendargrid {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-self: stretch;
     padding: 0 var(--sidepadding);
@@ -680,16 +664,10 @@ button {
         flex-direction: column;
     }
 
-    #workimage {
-        width: 100%;
-    }
-
-    #pictureOmmig {
-        width: 100%;
-    }
-
     #luftpummpetext,
-    #luftpumpeimg {
+    #luftpumpeimg,
+    #pictureOmmig,
+    #workimage {
         width: 100%;
     }
 
@@ -740,7 +718,6 @@ button {
 
     .anmdelarrow {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         width: 100%;
         align-items: center;
@@ -775,6 +752,7 @@ button {
 
     .work {
         width: 100%;
+        max-width: 400px;
     }
 
     #month img {
@@ -786,9 +764,5 @@ button {
         display: flex;
         align-items: center;
         gap: var(--smallpadding);
-    }
-
-    .work {
-        max-width: 400px;
     }
 }

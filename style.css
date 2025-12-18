@@ -99,6 +99,7 @@ body {
     background-color: var(--lightorange);
     border-radius: 15px;
     border: 5px solid #CA6F00;
+    z-index: 10;
 }
 
 .popUp h3,
@@ -149,6 +150,7 @@ header {
     padding-right: var(--toppadding);
     background-color: var(--grey);
     transition: 1s;
+    z-index: 5;
 }
 
 .navbar {
@@ -302,6 +304,16 @@ button:hover {
     box-shadow: var(--dropshadow);
     width: 30%;
 }
+
+.work:hover {
+    scale: 1.05;
+    transition: 0.5s;
+}
+.work:not(:hover) {
+    scale: 1;
+    transition: 0.5s;
+}
+
 
 .workPictures {
     height: auto;
@@ -654,6 +666,10 @@ button {
         display: block;
     }
 
+    .hero {
+        background-image: url(fotos/hero...png);
+    }
+
     #underommig,
     .luftpumpecontent {
         flex-direction: column;
@@ -744,6 +760,10 @@ button {
 }
 
 @media screen and (max-width: 1024px) {
+    .hero {
+        background-image: url(fotos/heroipad.png);
+    }
+
     #Ydelser {
         flex-direction: column;
         width: 100%;
